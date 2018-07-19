@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../static/js/lib/jquery.js"></script>
+    <script src="../static/js/jqueryselector_1.js"></script>
+    <link rel="stylesheet" href="../static/css/jqueryselector_1.css">
+    <title>selector</title>
+</head>
+<body>
+    <h1>选择器测试</h1>
+    <div class="one" id="one">
+        id 为one ,class 为one 的div
+        <div class = "mini"> class 为mini</div>
+    </div>
+    <div class="one" id="two" title="test">
+        id 为two,class为one,title为test的div
+        <div class="mini" title="other">class为mini,title为other</div>
+        <div class="mini" title="test">class为mini,title为test</div>
+    </div>
+    <div class="one">
+        <div class="mini">class 为mini</div>
+        <div class="mini">class 为mini</div>
+        <div class="mini">class 为mini</div>
+        <div class="mini"></div>
+    </div>
+    <div class="one">
+        <div class="mini">class 为mini</div>
+        <div class="mini">class 为mini</div>
+        <div class="mini">class 为mini</div>
+        <div class="mini" title="test">class为mini,title为test</div>
+    </div>
+    <div style="display:none;" class="one">
+        style的display为“none”的div
+    </div>
+    <div class="hide">class为“hide”的div</div>
+    <div>包含input的type为“hidden”的div<input type="hidden" size="8"/></div>
+    <span id="mover">正在执行动画的span元素</span>
+<script type="text/javascript">
+    $(function(){
+        //简单选择器
+        //$("#one").css("background","#bbffaa");
+        //$(".mini").css("background","#bbffaa");
+        //$("div").css("background","#bbffaa");
+        //$("*").css("background","#bbffaa");
+        //$("span,#two").css("background","#bbffaa"); //合并选择器
+
+        //层次选择器
+        //$("body div").css("background","#bbffaa");   //body内所有div
+        //$("body>div").css("background","#bbffaa");    //只有body 子 div
+        //$(".one + div").css("background","#bbffaa");    //class 为one的下一个同辈div   与 $(".one").next("div");等价
+        //$("#two ~ div").css("background","#bbffaa");     //id为two的元素后面的所有div     与$("#two").nextAll("div");等价
+        //$("#two").siblings("div").css("background","#bbffaa");
+
+        //过滤选择器
+        //基本过滤选择器
+        //$("div:first").css("background","#bbffaa");
+        //$("div:last").css("background","#bbffaa");
+        //$("div:not(.one)").css("background","#bbffaa");
+        //$("div:even").css("background","#bbffaa");
+        //$("div:odd").css("background","#bbffaa");
+        //$("div:eq(3)").css("background","#bbffaa");
+        //$("div:gt(3)").css("background","#bbffaa");
+        //$("div:lt(3)").css("background","#bbffaa");
+        //$(":header").css("background","#bbffaa");
+        //$(":animated").css("background","#bbffaa");
+        //$(":focus").css("background","#bbffaa");
+        //内容过滤选择器
+        //$("div:contains(di)").css("background","#bbffaa");
+        //$("div:empty").css("background","#bbffaa");
+        //$("div:has('.mini')").css("background","#bbffaa");
+        //$("div:parent").css("background","#bbffaa");
+        //可见性过滤选择器
+        //$("div:visible").css("background","#FF6500");
+        //$("div:hidden").show(3000);      //包括 样式display:none; <input type="hidden"/> visibility:hidden之类的元素
+        //属性过滤选择器
+        //$("div[title]").css("background","#bbffaa");
+        //$("div[title=test]").css("background","#bbffaa");
+        //$("div[title!=test]").css("background","#bbffaa");
+        //$("div[title^=te]").css("background","#bbffaa");
+        //$("div[title$=st]").css("background","#bbffaa");
+        //$("div[title*=es]").css("background","#bbffaa");
+        //$("div[id][title*=es]").css("background","#bbffaa");
+
+        //子元素过滤选择器
+        //$("div.one :nth-child(2)").css("background","#bbffaa");
+        //$("div.one :nth-child(even)").css("background","#bbffaa");
+        //$("div.one :nth-child(odd)").css("background","#bbffaa");
+        //$("div.one :nth-child(3n+1)").css("background","#bbffaa");
+        //$("div.one :nth-child(equation)").css("background","#bbffaa");
+        //$("div.one :last-child").css("background","#bbffaa");
+        //$("div.one :first-child").css("background","#bbffaa");
+        //$("div.one :only-child").css("background","#bbffaa");
+
+
+
+
+    });
+</script>
+</body>
+</html>

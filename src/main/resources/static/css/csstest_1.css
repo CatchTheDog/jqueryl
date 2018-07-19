@@ -1,0 +1,43 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#main {
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: darkgray;
+}
+/*.simple {
+    width: 500px;
+    height: 200px;
+    background-color: darkgray;
+    margin: 20px auto;
+    border: 10px solid;
+}
+.fancy {
+    width: 500px;
+    height: 200px;
+    background-color: darkgray;
+    margin: 20px auto;
+    padding: 50px;
+    border: 10px solid;
+}*/
+
+.simple {
+    width: 500px;
+    height: 200px;
+    background-color: darkgray;
+    margin: 20px auto;
+    border: 10px solid;
+
+}
+.fancy {
+    width: 500px;
+    height: 200px;
+    background-color: darkgray;
+    margin: 20px auto;
+    padding: 50px;
+    border: 10px solid;
+}
