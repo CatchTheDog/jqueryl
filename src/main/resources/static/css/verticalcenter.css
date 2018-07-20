@@ -1,0 +1,15 @@
+<!--垂直居中 行高和元素高度一致-->
+#div1 {
+    border: #96C02E 2px solid;
+    line-height: 200px;
+    height: 200px;
+    text-align: center;
+}
+#div2 {
+    border: black 2px solid;
+}
+<!--垂直居中 加入table标签，然后vertical-align为middle-->
+#div2 {
+    vertical-align: middle;
+    text-align: center;
+}
