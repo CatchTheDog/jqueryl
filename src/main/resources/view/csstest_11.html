@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float clear测试</title>
+    <link rel="stylesheet" href="../static/css/csstest_11.css">
+</head>
+<body>
+<h1>clear 测试</h1>
+    <div id="div1">
+        div1
+        <div id="div2">div2 float: left;</div>
+        <div id="div3">div3 float: left;clear: left;</div>
+        <div id="div4">div4 float: left;</div>
+        <div id="div5">div5 float: right;</div>
+        <div id="div6">div6 float: right;clear:both;</div>
+        <div id="div7">div7 float: right;</div>
+        <div id="div8">div8 float: left;clear:both;</div>
+        <div id="div9">div9 float: left</div>
+    </div>
+<div id="div10">
+    <h1>clear 总结</h1>
+    <ul>
+        <li>clear有以下几个值：none,both,left,right</li>
+        <li>clear属性只影响设置该属性的元素本身，对其他元素没有影响</li>
+        <li>none:元素左右两侧均允许出现浮动元素</li>
+        <li>left:元素左侧均不允许出现浮动元素(该元素不会紧靠上一浮动元素，自动换行)</li>
+        <li>right:元素右侧均不允许出现浮动元素(该元素不会紧靠上一浮动元素，自动换行)</li>
+        <li>both:元素左右两侧均不允许出现浮动元素(该元素不会紧靠上一浮动元素，自动换行)</li>
+    </ul>
+</div>
+
+</body>
+</html>

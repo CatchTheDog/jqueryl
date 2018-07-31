@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位测试</title>
+    <link rel="stylesheet" href="../static/css/csstest_10.css">
+</head>
+<body>
+<h1>定位测试</h1>
+    <div id="div1">
+        div1 static
+       <div id="div2">
+           div2 relative top:50px; left:100px;
+           <div id="div4">div4 relative; top: 50px; left:100px;</div>
+           <div id="div5">div5 absolute; top: -50px; left:100px;</div>
+           <div id="div6">div6 static</div>
+       </div>
+        <div id="div3">
+            div3 static
+        </div>
+        <div id="div7">
+            div7 absolute;top: 50px;left: 100px;
+        </div>
+        <div>
+            <h1>定位总结</h1>
+            <ul>
+                <li>position有几个重要的值:static relative absolute</li>
+                <li>static:默认的，正常文档流元素的position属性所具有的值</li>
+                <li>relative：当元素position值为relative时，表示该元素相对于其在正常文档流中的位置发生偏移，具体偏移距离根据top,left,right,bottom决定</li>
+                <li>absolute:当元素position值为absolute时，表示该元素将脱离文档流，且相对于其包含块（其父类块中position值不为static的元素）发生偏移，具体偏移距离根据top,left,right,bottom决定</li>
+                <li>z-index 属性只在position为relative,absolute,fixed的元素上有效，值比较大的元素会出现在值比较小的元素上面</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
