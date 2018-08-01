@@ -1,0 +1,85 @@
+body, ul, li, form, div, a {
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: black;
+}
+
+#navbar {
+    float: right;
+    margin-right: 20px;
+}
+
+#navbar li {
+    float: right;
+    display: block;
+    text-indent: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+#searchform {
+    width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+    position: relative;
+    top: 170px;
+    text-align: center;
+}
+
+#searchform img {
+    height: 129px;
+    width: 270px;
+    margin: 0 auto;
+}
+
+#searchform form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#searchform form div {
+    width: 700px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#searchform input[type=text] {
+    padding: 0;
+    width: 540px;
+    height: 32px;
+    margin: 0;
+    border: 0;
+
+}
+
+#wrapper {
+    width: 540px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    border: #0066FF 1px solid;
+    display: inline-block;
+}
+
+#searchform input[type=submit] {
+    width: 100px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    background-color: #0066FF;
+    border: 0;
+    color: white;
+}
+
+footer, footer a {
+    text-align: center;
+    color: #999;
+}
+
+footer p a {
+    margin: 0 10px;
+}
+
